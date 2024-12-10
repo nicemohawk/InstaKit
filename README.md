@@ -6,7 +6,8 @@ InstaKit is a simple package including a basic SwiftUI button to share a photo t
 
 ## Installation
 
-**SwiftPM** is the best and easiest way to distribute Swift packages in 2025 so I am providing a GitHub link HERE to install the package.
+**SwiftPM** is the best and easiest way to distribute Swift packages in 2025 so I am providing a GitHub link HERE to install the package:
+**https://github.com/DanielCrompton123/InstaKit.git**
 
 1. Open Project settings in Xcode (the actual *project* rather than the main target)
 2. Go to the "**Package Dependencies**" tab and under the list of dependencies, press the **+** button.
