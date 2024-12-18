@@ -120,17 +120,16 @@ public struct InstagramButton: View {
     public var body: some View {
         Button {
             Task {
+                // Get fresh data when button is pressed
+                let bg = await getBackgroundImageData()
+                let st = await getStickerImageData?()
+                backgroundImageData = bg
+                stickerImageData = st
+
                 await openInInstagram()
             }
         } label: {
             label
-        }
-        .task {
-            // Get the background & sticker image when the view loads
-            async let bg = getBackgroundImageData()
-            async let st = getStickerImageData?()
-            
-            (backgroundImageData, stickerImageData) = await (bg, st)
         }
     }
     
