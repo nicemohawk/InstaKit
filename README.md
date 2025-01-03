@@ -39,6 +39,9 @@ Secondly, you must have registered your app with Meta's API (although you do not
 
 And you're done! Now you can **copy the meta app ID to Xcode and pass to `InstagramButton`**. 
 
+Note: make sure to check if Instagram is installed before showing your button. Otherwise, you'll get rejected from App Store review. Something like this: `if let url = URL(string: "instagram-stories://share"), UIApplication.shared.canOpenURL(url) {`
+
+
 Enjoy using
 
 ## Future considerations
