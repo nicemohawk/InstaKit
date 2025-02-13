@@ -1,4 +1,4 @@
-#  InskaKit
+#  InstaKit
 
 InstaKit is a simple package including a basic SwiftUI button to share a photo to Instagram, with the option of adding a custom sticker too.
 
